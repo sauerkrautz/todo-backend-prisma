@@ -1,13 +1,22 @@
 # TODO BACKEND WITH PRISMA
 
+## Main Dependencies
+
+- [Express](https://expressjs.com/en/5x/api.html)
+- [Prisma](https://www.prisma.io/docs/)
+
 ## npm install
 
 ```bash
-    npm install
+npm install
 ```
 
-to install all the dependencies required
+install all the dependencies required
 
 ## npm start
 
-to start the node server
+```bash
+npm start
+```
+
+start the node server
