@@ -1,0 +1,10 @@
+POST http://localhost:5000/todo
+Content-Type: application/json
+
+{
+    "text": "here is dfsgsdfgsdfgsdfg that i sent as a first query to the prisma database"
+}
+
+###
+// get all todos
+GET http://localhost:5000/todos

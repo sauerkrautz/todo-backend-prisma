@@ -1,0 +1,62 @@
+// create user
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{
+    "email": "user@gmail.com",
+    "name": "user",
+    "password": "user123"
+}
+
+###
+// get user by id
+GET http://localhost:5000/user/a071d39c-6b64-4731-bd08-1abbbb10f215
+
+###
+// get all users
+GET  http://localhost:5000/users
+
+###
+// update user
+PATCH http://localhost:5000/user/f96aff5b-c707-4c32-8c83-63ab73bfa112
+Content-Type: application/json
+
+{
+    "role": "admin"
+}
+
+###
+// login admin
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "admin123"
+}
+
+###
+// login users
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "user@gmail.com",
+    "password": "user123"
+}
+
+###
+// check login status
+GET http://localhost:5000/check
+
+###
+// logout
+DELETE http://localhost:5000/logout
+
+###
+// delete user
+DELETE http://localhost:5000/user/68c69fa0-859b-4bbc-bd77-97da0221959a
+
+# ###
+# // drop all table
+# DELETE http://localhost:5000/drop
